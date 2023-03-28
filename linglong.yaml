@@ -1,0 +1,33 @@
+package:
+  id: dtkwidget
+  name: dtkwidget
+  kind: lib
+  version: 5.5.39
+  description: |
+    dtkwidget.
+
+source:
+  kind: git
+  url: https://github.com/linuxdeepin/dtkwidget.git
+  version: develop/snipe
+  commit: 2db46873a9356728fa0b2633bf996904e3cc99bc
+
+  patch: []
+base:
+  id: org.deepin.base/20.5.0
+
+depends:
+- id: qtbase/5.11.3.15
+- id: qttools/5.11.3
+- id: qtx11extras/5.11.3
+- id: qtsvg/5.11.3
+- id: qtxdg/3.3.1.1
+- id: qtmultimedia/5.11.3
+- id: gsettings-qt/0.2
+- id: dtkcommon/5.5.3
+- id: dtkcore/5.5.26
+- id: dtkgui/5.5.22
+- id: googletest/1.8.1
+
+build:
+  kind: qmake
