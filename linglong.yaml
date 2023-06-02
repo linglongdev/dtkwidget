@@ -29,5 +29,11 @@ depends:
   - id: dtkgui/5.5.22
   - id: googletest/1.8.1
 
+variables:
+  extra_args: |
+    -DBUILD_EXAMPLES=OFF \
+    -DBUILD_DOCS=OFF \
+    -DVERSION=${VERSION}
+
 build:
   kind: cmake
